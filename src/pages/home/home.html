@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="/assets/images/sp-icon-white.png" alt="">
+      <ion-label>Lead Pastor Retreat 2016</ion-label>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <button ion-item *ngFor="let item of pages" (click)="openPage(item)" icon-left>
+        <ion-icon [name]="item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+        {{ item.title }}
+      </button>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,20 @@
+page-dinner-seating {
+  .card-header-md {
+    border: .3em solid #df5727;
+    font-size: 2.0em;
+    border-radius: 50%;
+    padding: 2em .5em;
+    background-color: #df5727;
+    color: #fff;
+    max-width: 6em;
+    height: 6em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 1em auto;
+  }
+  .item-md:not(:last-child) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
