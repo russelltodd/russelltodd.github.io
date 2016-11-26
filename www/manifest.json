@@ -1,0 +1,13 @@
+{
+  "name": "Lead Pastor Retreat 2016",
+  "short_name": "LPR16",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/PartnersIcon.png",
+    "sizes": "165x165",
+    "type": "image/png"
+  }],
+  "background_color": "#df5727",
+  "theme_color": "#df5727"
+}
