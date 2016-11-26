@@ -1,5 +1,5 @@
 page-dinner-seating {
-  .card-header-md {
+  .card-header-md, .card-header-ios {
     border: .3em solid #df5727;
     font-size: 2.0em;
     border-radius: 50%;
@@ -14,7 +14,7 @@ page-dinner-seating {
     line-height: 1em;
     margin: 1em auto;
   }
-  .item-md:not(:last-child) {
+  .item-md:not(:last-child), .item-ios:not(:last-child) {
     border-bottom: 1px solid #cdcdcd;
   }
 }

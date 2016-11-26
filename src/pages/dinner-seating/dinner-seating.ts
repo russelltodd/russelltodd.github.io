@@ -21,14 +21,15 @@ export class DinnerSeatingPage {
     public retreatData: RetreatData) {}
 
   ionViewDidLoad() {
-    console.log('Hello DinnerSeatingPage Page');
     this.retreatData.getDinnerSeating().subscribe(seating => {
       this.tables = seating;
     });
   }
 
   goToAttendeePage(id) {
-    this.navCtrl.push(AttendeesPage);
+    this.navCtrl.push(AttendeesPage, {
+      id: id
+    });
   }
 
 }

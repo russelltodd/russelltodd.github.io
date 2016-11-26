@@ -82,4 +82,10 @@ export class RetreatData {
       return data.dinnerSeating;
     });
   }
+
+  getDevotionals() {
+    return this.load().map(data => {
+      return data.devotionals;
+    });
+  }
 }

@@ -1,5 +1,5 @@
 page-schedule {
-  .item-divider-md {
+  .item-divider-md, .item-divider-ios {
     background-color: #df5727;
     color: #fff;
     ion-label {
@@ -7,7 +7,7 @@ page-schedule {
       font-size: 1.2em;
     }
   }
-  ion-item.item-md:nth-child(odd) {
+  ion-item.item-md:nth-child(odd), ion-item.item-ios:nth-child(odd) {
     background-color: #efefef;
   }
   ion-item {
@@ -15,7 +15,7 @@ page-schedule {
       white-space: normal;
     }
   }
-  .item-md {
+  .item-md, .item-ios {
     h3 {
       font-weight: bold;
       font-size: 1.75rem;

@@ -5,6 +5,8 @@ import { HomePage } from '../pages/home/home';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { AttendeesPage } from '../pages/attendees/attendees';
 import { DinnerSeatingPage } from '../pages/dinner-seating/dinner-seating';
+import { DevotionalPage } from '../pages/devotional/devotional';
+import { DevotionalListPage } from '../pages/devotional-list/devotional-list';
 import { Storage } from '@ionic/storage';
 import { RetreatData } from '../providers/retreat-data';
 
@@ -15,6 +17,8 @@ import { RetreatData } from '../providers/retreat-data';
     SchedulePage,
     AttendeesPage,
     DinnerSeatingPage,
+    DevotionalPage,
+    DevotionalListPage,
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,6 +30,8 @@ import { RetreatData } from '../providers/retreat-data';
     SchedulePage,
     AttendeesPage,
     DinnerSeatingPage,
+    DevotionalPage,
+    DevotionalListPage,
   ],
   providers: [
     RetreatData,

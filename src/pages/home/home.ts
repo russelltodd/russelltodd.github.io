@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import { SchedulePage } from '../schedule/schedule';
 import { AttendeesPage } from '../attendees/attendees';
 import { DinnerSeatingPage } from '../dinner-seating/dinner-seating';
+import { DevotionalListPage } from '../devotional-list/devotional-list';
 
 @Component({
   selector: 'page-home',
@@ -19,7 +20,7 @@ export class HomePage {
           title: 'Schedule',
           icon: 'calendar',
           description: 'This is the schedule',
-          color: '#df5727',
+          color: '#555555',
           page: SchedulePage,
         },
         {
@@ -31,10 +32,17 @@ export class HomePage {
         },
         {
           title: 'Monday Dinner Seating',
-          icon: 'calendar',
+          icon: 'restaurant',
           description: 'This is the dinner seating',
-          color: '#000000',
+          color: '#555555',
           page: DinnerSeatingPage,
+        },
+        {
+          title: 'Devotionals',
+          icon: 'book',
+          description: 'This is the devotionals page',
+          color: '#555555',
+          page: DevotionalListPage,
         },
       ]
 

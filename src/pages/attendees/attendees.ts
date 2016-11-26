@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { NavController, NavParams, Content } from 'ionic-angular';
 import { RetreatData } from '../../providers/retreat-data';
 
 /*
@@ -14,13 +14,16 @@ import { RetreatData } from '../../providers/retreat-data';
 })
 export class AttendeesPage {
   attendees = [];
+  attendeeToShow = 0;
+  @ViewChild(Content) content: Content;
+
 
   constructor(public navCtrl: NavController,
+    public navParams: NavParams,
     public retreatData: RetreatData) {
   }
 
   ionViewDidLoad() {
-    console.log('Hello AttendeesPage Page');
     this.retreatData.getAttendees().subscribe(attendees => {
       this.attendees = attendees;
     });
